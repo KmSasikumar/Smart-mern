@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zindagi Verde - HTML & CSS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Zindagi Verde</h1>
+        <p class="subtitle">The Power of Sustainable Living</p>
+    </header>
+
+    <section class="intro-text">
+        <p>
+            Sustainable living means making daily choices that help reduce our environmental impact. This can involve using energy-efficient appliances, reducing plastic usage, and adopting minimalism in consumption. These changes, though small individually, contribute greatly to preserving natural resources and protecting our planet.
+            <br><br />
+            By choosing to live sustainably, we not only reduce our carbon footprint but also promote a healthier, more conscious lifestyle. It's a powerful movement that encourages community, innovation, and long-term well-being for future generations. Everyone has a role to play in making Earth a greener place.
+            Small steps can lead to big changes. Turning off unused lights, conserving water while brushing, and saying no to single-use plastics are simple actions that make a difference. Supporting eco-friendly brands and spreading awareness can multiply this impact.
+            Sustainable living also means reconnecting with nature. Gardening, composting, using bicycles for short distances, and participating in local clean-up drives not only help the environment but also bring a sense of purpose and fulfillment. As we grow more mindful of our lifestyle choices, we contribute to a planet that thrives along with us.
+        </p>
+    </section>
+    
+    <section class="image-box">
+        <img src="img.jpeg" alt="Sustainable Living Illustration">
+        <figcaption>Promoting sustainability for a greener future</figcaption>
+    </section>
+
+    <section class="button-section">
+        <button id="readMoreBtn" class="custom-btn">Read More</button>
+    </section>
+
+   <!-- Extra content hidden by default -->
+<section class="extra-info" id="extraInfo" style="display: none;">
+    <p>
+        Sustainable practices can be applied at home, workplaces, and communities. Simple habits like composting food waste, choosing public transport, conserving water, and supporting local products contribute significantly to ecological balance.
+    </p>
+    <p>
+        Technology also plays a role in sustainability. From smart home systems that reduce energy use to apps that track carbon footprints, innovation is driving change. Adopting these changes makes a lasting impact.
+    </p>
+    <p>
+        Education is another powerful tool in promoting sustainable development. Encouraging children and young adults to understand environmental challenges empowers the next generation to become responsible caretakers of our planet.
+    </p>
+    <p>
+        In the workplace, implementing green policies such as digital documentation, energy-efficient lighting, and waste segregation can create a culture of environmental responsibility. Even small office initiatives, like carpool programs or reusable water bottles, make a difference.
+    </p>
+    <p>
+        On a global level, collaboration and collective action are vital. Governments, corporations, and individuals must work hand in hand to shift toward renewable energy sources, reduce emissions, and invest in climate-resilient infrastructure.
+    </p>
+</section>
+
+    <section class="info-table-form">
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Habit</th>
+                    <th>Impact</th>
+                    <th>Ease</th>
+                </tr>
+                <tr>
+                    <td>Using Reusables</td>
+                    <td>Reduces plastic waste</td>
+                    <td>Very Easy</td>
+                </tr>
+                <tr>
+                    <td>Planting Trees</td>
+                    <td>Improves air quality</td>
+                    <td>Moderate</td>
+                </tr>
+                <tr>
+                    <td>Carpooling</td>
+                    <td>Less fuel use</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-wrap">
+            <form>
+                <p class="suggest-line">Suggest the improvements</p>
+                <input type="text" placeholder="Enter your name" class="input-text">
+                <input type="email" placeholder="Enter your email" class="input-email">
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ✅ Script moved to bottom for safe DOM access -->
+    <script>
+        const button = document.getElementById('readMoreBtn');
+        const extraInfo = document.getElementById('extraInfo');
+
+        button.addEventListener('click', () => {
+            if (extraInfo.style.display === 'block') {
+                extraInfo.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                extraInfo.style.display = 'block';
+                button.textContent = 'Show Less';
+            }
+        });
+    </script>
+<footer class="credit">
+    Done by K. Sasikumar
+</footer>
+
+</body>
+</html>
